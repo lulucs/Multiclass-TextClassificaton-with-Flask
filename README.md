@@ -25,27 +25,30 @@ This dataset is available in Google BigQuery also a public Cloud Storage [URL](h
 * Flask
 * Packages listed in requirements.txt
 
-### Test Locally
-#### 1. Download the files
 
-#### 2. Train the classifier
+### Test Locally
+##### 1. Download the files
+
+##### 2. Train the classifier
 ```
 $ python build_model.py
 ```
   Sample output in the terminal
+
   ![training terminal output](media/train_terminal_output.png)
 
   Model's accuracy and summary of the precision, recall, F1 score, support(number of occurrences of each class in y_true) for each class are listed above to indicate the performance of the classifier.
 
-#### 3. Start the Flask API
+##### 3. Start the Flask API
 ```
 python app.py
 ```
 
-#### 4. Start a new terminal
-#### 5. Use curl to make a GET request at the URL of the API.
+##### 4. Start a new terminal
+##### 5. Use curl to make a GET request at the URL of the API.
 ```
 $ curl -X GET http://127.0.0.1:5000/ -d query='socket.error: [Errno 48] Address already in use'
 ```
   Sample output in the terminal
+  
   ![prediction terminal output](media/prediction_sample_output.png)
