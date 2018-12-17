@@ -4,10 +4,11 @@ A simple REST API (with Flask) for multi-class text classification.
 ## Introduction
 
 ### Purpose
-The purpose of this project is to build a multi-class text classifier that classifies new text inputs into the following categories: javascript, python, css, mysql, iphone, html, ios, php.
+The purpose of this project is to build a multi-class text classifier that classifies new text inputs into the following categories: **_javascript, python, css, mysql, iphone, html, ios, php._**
 
 ### Dataset
-Stack Overflow questions and tags is used in this project. This dataset is available in Google BigQuery also a public Cloud Storage [URL](https://storage.googleapis.com/tensorflow-workshop-examples/stack-overflow-data.csv). It is chosen since the classes are well balanced. There are 20 classes of the questions asked, but instead of using the whole dataset, a subset consisting of 8 classes are selected. They are questions about javascript, python, css, mysql, iphone, html, ios, and php.
+Stack Overflow questions and tags is used in this project.
+This dataset is available in Google BigQuery also a public Cloud Storage [URL](https://storage.googleapis.com/tensorflow-workshop-examples/stack-overflow-data.csv). It is chosen since the classes are well balanced. There are 20 classes of the questions asked, but instead of using the whole dataset, a subset consisting of 8 classes are selected. They are questions about javascript, python, css, mysql, iphone, html, ios, and php.
 
 ### File Notes
 * app.py: Flask API application
@@ -33,6 +34,8 @@ $ python build_model.py
 ```
 Sample output in the terminal
 ![training terminal output](media/train_terminal_output.png)
+
+Model's accuracy and summary of the precision, recall, F1 score, support(number of occurrences of each class in y_true) for each class are listed above to indicate the performance of the classifier.
 
 3. Start the Flask API
 ```
