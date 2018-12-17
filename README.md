@@ -32,10 +32,10 @@ This dataset is available in Google BigQuery also a public Cloud Storage [URL](h
 ```
 $ python build_model.py
 ```
-Sample output in the terminal
-![training terminal output](media/train_terminal_output.png)
+  Sample output in the terminal
+  ![training terminal output](media/train_terminal_output.png)
 
-Model's accuracy and summary of the precision, recall, F1 score, support(number of occurrences of each class in y_true) for each class are listed above to indicate the performance of the classifier.
+  Model's accuracy and summary of the precision, recall, F1 score, support(number of occurrences of each class in y_true) for each class are listed above to indicate the performance of the classifier.
 
 3. Start the Flask API
 ```
@@ -47,5 +47,5 @@ python app.py
 ```
 $ curl -X GET http://127.0.0.1:5000/ -d query='socket.error: [Errno 48] Address already in use'
 ```
-Sample output in the terminal
-![prediction terminal output](media/prediction_sample_output.png)
+  Sample output in the terminal
+  ![prediction terminal output](media/prediction_sample_output.png)
