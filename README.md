@@ -36,7 +36,7 @@ $ python build_model.py
 
   ![training terminal output](media/train_terminal_output.png)
 
-  Model's accuracy and summary of the precision, recall, F1 score, and support(number of occurrences of each class in y_true) for each class are listed above to indicate the performance of the classifier.
+  Model's accuracy and summary of the precision, recall, F1 score, and support (number of occurrences of each class in y_true) for each class are listed above to indicate the performance of the classifier.
 
 ##### 3. Start the Flask API
 ```
