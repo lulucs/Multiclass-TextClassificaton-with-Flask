@@ -12,7 +12,7 @@ It is chosen since the classes are well balanced. There are 20 classes of the qu
 
 ### File Notes
 * app.py: Flask API application
-* model.py: class object for Logistic Regression model
+* model.py: class object for model
 * build_model.py: model construction
 * requirements.txt: list of packages that the app will import  
 
