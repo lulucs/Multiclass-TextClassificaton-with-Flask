@@ -7,17 +7,14 @@ A simple REST API (with Flask) for multi-class text classification.
 The purpose of this project is to build a model that classifies new text inputs into the following categories: **_javascript, python, css, mysql, iphone, html, ios, php._**
 
 ### Dataset
-Stack Overflow questions and tags is used in this project.<br/>
-This dataset is available in Google BigQuery also a public Cloud Storage [URL](https://storage.googleapis.com/tensorflow-workshop-examples/stack-overflow-data.csv). It is chosen since the classes are well balanced. There are 20 classes of the questions asked, but instead of using the whole dataset, a subset consisting of 8 classes is used in this project. They are questions about javascript, python, css, mysql, iphone, html, ios, and php.
+Stack Overflow questions and tags is used in this project. This dataset is available in Google BigQuery also a public Cloud Storage [URL](https://storage.googleapis.com/tensorflow-workshop-examples/stack-overflow-data.csv). <br/>
+It is chosen since the classes are well balanced. There are 20 classes of the questions asked, but instead of using the whole dataset, a subset consisting of 8 classes is used in this project. They are questions about javascript, python, css, mysql, iphone, html, ios, and php.
 
 ### File Notes
 * app.py: Flask API application
 * model.py: class object for Logistic Regression model
 * build_model.py: model construction
 * requirements.txt: list of packages that the app will import  
-
-
-
 
 
 ## Test the API
